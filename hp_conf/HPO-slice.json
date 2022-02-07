@@ -1,0 +1,78 @@
+{
+    "dataset": "slice",
+    "model": "MLP",
+    "config": { 
+        "max_epoch": 100,
+        "surrogate" : "FCNetSliceLocalizationBenchmark" 
+    },
+    "hyperparams": {
+      
+        "n_units_1": {
+            "type": "int",
+            "value_type": "preordered",
+            "range": [16, 32, 64, 128, 256, 512],
+            "default": 32
+        },
+        "n_units_2": {
+            "type": "int",
+            "value_type": "preordered",
+            "range": [16, 32, 64, 128, 256, 512],
+            "default": 64
+        },
+
+        "dropout_1": {
+            "type": "float",
+            "value_type": "preordered",
+            "range": [0.0, 0.3, 0.6],
+            "default": 0.3
+        },
+        "dropout_2": {
+            "type": "float",
+            "value_type": "preordered",
+            "range": [0.0, 0.3, 0.6],
+            "default": 0.3
+        }, 
+
+        "activation_fn_1": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": [
+                "relu",
+                "tanh"
+            ],
+            "default": "relu"
+        },
+        "activation_fn_2": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": [
+                "relu",
+                "tanh"
+            ],
+            "default": "relu"
+        },
+        
+        "init_lr": {
+            "type": "float",
+            "value_type": "preordered",
+            "range": [5e-4, 1e-3, 5e-3, 1e-2, 5e-2, 1e-1],
+            "default": 1e-3
+        },           
+        "lr_schedule": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": [
+                "cosine",
+                "const"
+            ],
+            "default": "const"
+        },        
+
+        "batch_size": {
+            "type": "int",
+            "value_type": "preordered",
+            "range": [8, 16, 32, 64],
+            "default": 32
+        }
+    }
+}

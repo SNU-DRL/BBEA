@@ -1,0 +1,66 @@
+{
+    "dataset": "CIFAR10",
+    "model": "NAS",
+    "config": { 
+        "max_epoch": 108, 
+        "surrogate" : "NAS-Bench-101"
+    },      
+    "hyperparams": {
+        "ops1": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["conv1x1-bn-relu", "conv3x3-bn-relu", "maxpool3x3"]
+        },
+        "ops2": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["conv1x1-bn-relu", "conv3x3-bn-relu", "maxpool3x3"]
+        },
+        "ops3": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["conv1x1-bn-relu", "conv3x3-bn-relu", "maxpool3x3"]
+        },
+        "ops4": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["conv1x1-bn-relu", "conv3x3-bn-relu", "maxpool3x3"]
+        },
+        "ops5": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["conv1x1-bn-relu", "conv3x3-bn-relu", "maxpool3x3"]
+        },
+
+        "link0": {
+            "type": "int",
+            "value_type": "discrete",
+            "range": [0, 63]
+        },
+        "link1": {
+            "type": "int",
+            "value_type": "discrete",
+            "range": [0, 31]
+        },
+        "link2": {
+            "type": "int",
+            "value_type": "discrete",
+            "range": [0, 15]
+        },
+        "link3": {
+            "type": "int",
+            "value_type": "discrete",
+            "range": [0, 7]
+        },
+        "link4": {
+            "type": "int",
+            "value_type": "discrete",
+            "range": [0, 3]
+        },
+        "link5": {
+            "type": "int",
+            "value_type": "discrete",
+            "range": [0, 1]
+        }                          
+    }
+}

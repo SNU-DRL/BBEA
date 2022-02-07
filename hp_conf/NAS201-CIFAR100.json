@@ -1,0 +1,40 @@
+{
+    "dataset": "cifar100",
+    "model": "NAS",
+    "config": { 
+        "max_epoch": 200, 
+        "surrogate" : "NAS-Bench-201"
+    },      
+    "hyperparams": {
+        "1<-0": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["none", "skip_connect", "nor_conv_1x1", "nor_conv_3x3", "avg_pool_3x3"]
+        },
+        "2<-0": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["none", "skip_connect", "nor_conv_1x1", "nor_conv_3x3", "avg_pool_3x3"]
+        },
+        "2<-1": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["none", "skip_connect", "nor_conv_1x1", "nor_conv_3x3", "avg_pool_3x3"]
+        },
+        "3<-0": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["none", "skip_connect", "nor_conv_1x1", "nor_conv_3x3", "avg_pool_3x3"]
+        },
+        "3<-1": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["none", "skip_connect", "nor_conv_1x1", "nor_conv_3x3", "avg_pool_3x3"]
+        },
+        "3<-2": {
+            "type": "str",
+            "value_type": "categorical",
+            "range": ["none", "skip_connect", "nor_conv_1x1", "nor_conv_3x3", "avg_pool_3x3"]
+        }                                                        
+    }
+}

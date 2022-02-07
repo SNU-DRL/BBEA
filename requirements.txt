@@ -1,0 +1,15 @@
+numpy>=1.15
+pandas>=1.0.1
+scikit-learn>=0.22
+scipy>=1.5.4
+GPy>=1.9.9
+matplotlib
+future
+validators
+flask-restful
+requests
+httplib2
+tqdm
+pyYAML
+pyDOE
+h5py

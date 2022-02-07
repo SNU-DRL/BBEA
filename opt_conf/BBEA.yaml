@@ -1,0 +1,26 @@
+# diversified BO models
+arms:
+    - model: RF-PTE
+      acq_func: EI
+    - model: RF-PTE
+      acq_func: PI
+    - model: RF-PTE
+      acq_func: UCB
+    - model: WGPL32m-PTE
+      acq_func: EI
+    - model: WGPL32m-PTE
+      acq_func: PI
+    - model: WGPL32m-PTE
+      acq_func: UCB
+
+
+# population recombination method
+search_space:
+  resample: DIV-SEQ-XM[10]
+
+
+# next candidate selection method
+mode: DIV
+spec: RANDOM
+
+
