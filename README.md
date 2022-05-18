@@ -1,4 +1,4 @@
-# B<sup>2</sup>EA: An Evolutionary Algorithm Assisted by Two Bayesian Optimization Modules for Neural Architecture Search
+# BBEA: An Evolutionary Algorithm Assisted by Two Bayesian Optimization Modules for Neural Architecture Search
 
 This is the offical implementation of the aforementioned paper.
 ![Graphical Abstract](./bbea_flow.png)
@@ -10,14 +10,9 @@ This is the offical implementation of the aforementioned paper.
 
 The early pioneering Neural Architecture Search (NAS) works were multi-trial methods applicable to any general search space. The subsequent works took advantage of the early findings and developed weight-sharing methods that assume a structured search space typically with pre-fixed hyperparameters. 
 Despite the amazing computational efficiency of the weight-sharing NAS algorithms, it is becoming apparent that multi-trial NAS algorithms are also needed for identifying very high-performance architectures, especially when exploring a general search space. 
-In this work, we carefully review the latest multi-trial NAS algorithms and identify the key strategies including Evolutionary Algorithm (EA), Bayesian Optimization (BO), diversification, input and output transformations, and lower fidelity estimation. To accommodate the key strategies into a single framework, we develop B<sup>2</sup>EA that is a surrogate assisted EA with two BO surrogate models and a mutation step in between. To show that B<sup>2</sup>EA is robust and efficient, we evaluate three performance metrics over 14 benchmarks with general and cell-based search spaces. Comparisons with state-of-the-art multi-trial algorithms reveal that B<sup>2</sup>EA is robust and efficient over the 14 benchmarks for three difficulty levels of target performance.
+In this work, we carefully review the latest multi-trial NAS algorithms and identify the key strategies including Evolutionary Algorithm (EA), Bayesian Optimization (BO), diversification, input and output transformations, and lower fidelity estimation. To accommodate the key strategies into a single framework, we develop BBEA that is a surrogate assisted EA with two BO surrogate models and a mutation step in between. To show that BBEA is robust and efficient, we evaluate three performance metrics over 14 benchmarks with general and cell-based search spaces. Comparisons with state-of-the-art multi-trial algorithms reveal that BBEA is robust and efficient over the 14 benchmarks for three difficulty levels of target performance.
 
-
-## Citation
-
-To be updated soon
-
--------
+----
 
 ## Requirements
 
@@ -84,7 +79,7 @@ Note that *.hdf5 files should be located under **/lookup/fcnet_tabular_benchmark
 
 ## HPO Run
 
-### To run the B<sup>2</sup>EA algorithms 
+### To run the BBEA algorithms 
 
 The experiment using the proposed method of the paper can be performed using the following runner: 
 
